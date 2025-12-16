@@ -15,12 +15,6 @@
       line-height: 1.6;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-
     h1 {
       font-size: 38px;
       font-weight: normal;
@@ -58,15 +52,23 @@
       margin-right: 15px;
     }
 
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      position: relative;   /* 기준점 */
+    }
+
     .links {
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        font-size: 16px;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 16px;
     }
+
     .links a {
-        margin-left: 15px;
-    }
+      margin-left: 15px;
+      }
 
     @media (max-width: 600px) {
       .links { position: static; margin-top: 20px; }
