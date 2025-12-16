@@ -15,11 +15,7 @@
       color: #000000;
       line-height: 1.6;
     }
-
-    @media (max-width: 600px) {
-      .links { position: static; margin-top: 20px; }
-    }
-
+    
     h1 {
       font-size: 42px;
       font-weight: normal;
@@ -65,21 +61,21 @@
 
 
     
-    :root{
-  --content-width: 900px;   /* .container max-width와 동일 */
-  --content-pad: 20px;      /* .container 좌우 padding과 동일 */
+:root{
+  --content-width: 900px;
+  --content-pad: 20px;
   --menu-top: 30px;
-  --menu-min-right: 30px;   /* 화면이 좁을 때 최소 여백 */
+  --menu-min-right: 30px;
 }
 
-/* 기존 container는 그대로 쓰되, position:relative는 없어도 됩니다 */
+/* content */
 .container {
   max-width: var(--content-width);
   margin: 60px auto;
   padding: 0 var(--content-pad);
 }
 
-/* 핵심: 메뉴를 viewport에 고정 + container 오른쪽 끝에 정렬 */
+/* menu: always fixed */
 .links {
   position: fixed;
   top: var(--menu-top);
@@ -88,22 +84,22 @@
     calc((100vw - var(--content-width)) / 2 + var(--content-pad))
   );
   font-size: 16px;
-  background: #ffffff; /* 글자가 본문과 겹칠 때 가독성 확보 */
+  background: #ffffff;
+  z-index: 9999;          /* 항상 위에 */
+  padding: 2px 0;         /* 선택: 배경 여백 */
 }
 
 .links a {
   margin-left: 15px;
+  white-space: nowrap;    /* 선택: 줄바꿈 방지 */
+}
+
+/* 메뉴가 본문을 가리지 않게 약간 띄우기 */
+body {
+  padding-top: 10px;
 }
 
 
-
-
-
-
-
-    @media (max-width: 600px) {
-      .links { position: static; margin-top: 20px; }
-    }
 
     
   </style>
