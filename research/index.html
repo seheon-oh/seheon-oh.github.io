@@ -52,23 +52,36 @@
       margin-right: 15px;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-      position: relative;   /* 기준점 */
-    }
+    :root{
+  --content-width: 900px;   /* .container max-width와 동일 */
+  --content-pad: 20px;      /* .container 좌우 padding과 동일 */
+  --menu-top: 30px;
+  --menu-min-right: 30px;   /* 화면이 좁을 때 최소 여백 */
+}
 
-    .links {
-      position: absolute;
-      top: 30px;
-      right: 30px;
-      font-size: 16px;
-    }
+/* 기존 container는 그대로 쓰되, position:relative는 없어도 됩니다 */
+.container {
+  max-width: var(--content-width);
+  margin: 60px auto;
+  padding: 0 var(--content-pad);
+}
 
-    .links a {
-      margin-left: 15px;
-      }
+/* 핵심: 메뉴를 viewport에 고정 + container 오른쪽 끝에 정렬 */
+.links {
+  position: fixed;
+  top: var(--menu-top);
+  right: max(
+    var(--menu-min-right),
+    calc((100vw - var(--content-width)) / 2 + var(--content-pad))
+  );
+  font-size: 16px;
+  background: #ffffff; /* 글자가 본문과 겹칠 때 가독성 확보 */
+}
+
+.links a {
+  margin-left: 15px;
+}
+    
 
     @media (max-width: 600px) {
       .links { position: static; margin-top: 20px; }
