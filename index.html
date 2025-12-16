@@ -15,10 +15,15 @@
       line-height: 1.6;
     }
 
+    @media (max-width: 600px) {
+      .links { position: static; margin-top: 20px; }
+    }
+
     .container {
       max-width: 900px;
       margin: 60px auto;
       padding: 0 20px;
+      position: relative;
     }
 
     h1 {
@@ -64,8 +69,14 @@
       text-decoration: underline;
     }
 
+    .links {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 16px;
+    }
     .links a {
-      margin-right: 15px;
+        margin-left: 15px;
     }
 
     footer {
