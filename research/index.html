@@ -11,7 +11,7 @@
   margin: 30px auto;
 }
 
-.figure-center img {
+.responsive-img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -22,13 +22,6 @@
   font-size: 13px;
   color: #444;
   font-style: italic;
-}
-
-.responsive-img {
-  max-width: 100%;   /* 창 너비를 넘지 않음 */
-  height: auto;      /* 비율 유지 */
-  display: block;
-  margin: 0 auto;    /* 가운데 정렬 */
 }
   
   
@@ -259,10 +252,13 @@ body {
         <p>
         Cold-mode gas accretion (CMA) is a fundamental prediction of ΛCDM galaxy formation models, in which relatively cool (∼10⁴ K) gas flows along cosmic filaments and accretes directly onto galaxies without being shock-heated to the virial temperature. In the local Universe, this process is expected to persist primarily in low-mass halos (M ≲ 10¹² M☉) and is thought to play a crucial role in sustaining star formation over cosmic time. However, observational confirmation remains challenging, as the cold baryonic component of the cosmic web is expected to reside at very low H I column densities (≲10¹⁷–10¹⁸ cm⁻²) and to exhibit kinematics that are distinct from the regularly rotating galactic disk. Detecting such gas therefore requires both high sensitivity and high angular resolution, particularly in the outer regions of nearby galaxies.
         </p>
-        
-        <img src="/research/cma.png"
-         alt="Gas cycle in galaxies: internal, external, small and large-scales..."
-         class="responsive-img">
+      
+
+        <figure class="figure-center">
+          <img src="/research/cma.png" class="responsive-img" alt="cma">
+          <figcaption>Gas cycle in galaxies: internal, external, small and large-scales...
+          </figcaption>
+        </figure>
 
         
         <p>
