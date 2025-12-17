@@ -250,16 +250,29 @@ body {
       <li>
         <strong>HI gas kinematics via multi-Gaussian profile decomposition</strong><br>
         <p>
-          The kinematics of neutral hydrogen (H I) gas encode critical information about the baryon cycle in galaxies, including disk rotation, feedback-driven motions, and gas inflow from the surrounding circumgalactic and intergalactic media. However, H I spectra in nearby galaxies are often non-Gaussian and contain multiple kinematic components along a single line of sight, reflecting the superposition of physically distinct gas phases. To disentangle these components, we employ profile decomposition of H I spectra into multiple Gaussian components, enabling a physically motivated separation of bulk rotational gas from dynamically disturbed or externally accreting gas. This approach provides the foundation for systematic kinematic tagging of H I gas in galaxies.
+          The kinematics of neutral hydrogen (HI) gas encode critical information about the baryon cycle in galaxies, including disk rotation, feedback-driven motions, and gas inflow from the surrounding circumgalactic and intergalactic media. However, H I spectra in nearby galaxies are often non-Gaussian and contain multiple kinematic components along a single line of sight, reflecting the superposition of physically distinct gas phases. To disentangle these components, we employ profile decomposition of H I spectra into multiple Gaussian components, enabling a physically motivated separation of bulk rotational gas from dynamically disturbed or externally accreting gas. This approach provides the foundation for systematic kinematic tagging of H I gas in galaxies.
         </p>
+        <figure class="figure-center">
+          <img src="/research/profile_decomposition.png" class="responsive-img" alt="cma">
+          <figcaption>An example of multi-Gaussian profile decomposition based on dynesty nested sampling (Oh et al. 2019, 2025)</figcaption>
+        </figure>
         
         <p>
         We use baygaud-PI (BAYesian GAUssian-profile Decomposer; Oh et al. 2019, 2025), a Bayesian framework that fits one to N Gaussian components to each line-of-sight H I spectrum and determines the most probable model via Bayesian evidence comparison. For each spectrum, baygaud-PI performs nested sampling to compute the evidence for competing models and applies physically motivated acceptance criteria, including signal-to-noise thresholds, velocity dispersion limits, and galaxy-specific velocity bounds. This ensures robust identification of kinematic components while avoiding overfitting. The method has been successfully applied to MHONGOOSE observations of NGC 5068, where multi-component decomposition reveals complex outer-disk and extraplanar H I structures that cannot be explained by simple disk rotation alone and are further examined through complementary 3D tilted-ring kinematic modeling.
         </p>
+        <figure class="figure-center">
+          <img src="/research/baygaud_pi.png" class="responsive-img" alt="cma">
+          <figcaption>Screenshot of baygaud-PI running (Oh et al. 2019, 2025)</figcaption>
+        </figure>
         
         <p>
         To move beyond individual spectra and achieve a global kinematic interpretation, the decomposed Gaussian components are subsequently analyzed using Gaussian Mixture Modelling (GMM). In this step, H I components are clustered in a multi-dimensional parameter space defined by intensity, velocity offset, velocity dispersion, and spatial position. This enables an objective classification of gas into distinct kinematic populations, such as circularly rotating disk gas, feedback-affected gas associated with internal baryon processes, and candidate inflowing cold gas accreting from the IGM/CGM or large-scale structure. The combined baygaud-PI + GMM framework thus provides a powerful, scalable tool for kinematic tagging of H I gas in nearby galaxies and forms the basis for systematic studies across MHONGOOSE and other modern H I surveys.
         </p>
+        <figure class="figure-center">
+          <img src="/research/ngauss_ngc5068.png" class="responsive-img" alt="cma">
+          <figcaption>Profile decomposition analysis of NGC 5068 from MHONGOOSE (Oh et al. in prep.)</figcaption>
+        </figure>
+        
       </li>
 
 
