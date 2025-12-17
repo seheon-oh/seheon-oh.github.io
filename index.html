@@ -73,33 +73,27 @@
   padding: 0 var(--content-pad);
 }
 
-/* menu: always fixed */
+/* menu: top-right, scrolls away naturally */
 .links {
-  position: fixed;
+  position: absolute;
   top: var(--menu-top);
   right: max(
     var(--menu-min-right),
     calc((100vw - var(--content-width)) / 2 + var(--content-pad))
   );
   font-size: 16px;
-  background: #ffffff;
-  z-index: 9999;          /* ✅ 항상 위에 */
-  padding: 2px 0;         /* 선택: 배경 여백 */
+  z-index: 10;
 }
 
 .links a {
   margin-left: 15px;
-  white-space: nowrap;    /* 선택: 줄바꿈 방지 */
+  white-space: nowrap;
 }
 
 /* 메뉴가 본문을 가리지 않게 약간 띄우기 */
 body {
   padding-top: 10px;
 }
-
-
-
-    
 
     .profile {
       width: 100px;
