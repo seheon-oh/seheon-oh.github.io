@@ -1,1 +1,353 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Research | Se-Heon Oh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+    
+    h1 {
+      font-size: 42px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: normal;
+      margin-top: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 17px;
+      margin: 15px 0;
+    }
+
+    ul.projects li {
+      padding-bottom: 12px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    ul.projects li:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    
+.figure-center {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.figure-center figcaption {
+  font-size: 13px;
+  color: #444;
+  font-style: italic;
+}
+
+
+    
+:root{
+  --content-width: 900px;
+  --content-pad: 20px;
+  --menu-top: 30px;
+  --menu-min-right: 30px;
+}
+
+/* content */
+.container {
+  max-width: var(--content-width);
+  margin: 60px auto;
+  padding: 0 var(--content-pad);
+}
+
+/* menu: top-right, scrolls away naturally */
+.links {
+  position: absolute;
+  top: var(--menu-top);
+  right: max(
+    var(--menu-min-right),
+    calc((100vw - var(--content-width)) / 2 + var(--content-pad))
+  );
+  font-size: 16px;
+  z-index: 10;
+}
+
+.links a {
+  margin-left: 15px;
+  white-space: nowrap;
+}
+    
+
+/* 메뉴가 본문을 가리지 않게 약간 띄우기 */
+body {
+  padding-top: 10px;
+}
+
+  .profile {
+    width: 100px;
+    margin: 20px 0;
+    border-radius: 6px;      /* 살짝 둥글게 */
+  }
+
+  footer {
+    margin-top: 60px;
+    font-size: 14px;
+    color: #666;
+  }
+    
+  </style>
+  
+</head>
+
+<body>
+  <div class="links">
+      <a href="https://seheon-oh.github.io/">home</a>
+      <a href="https://seheon-oh.github.io/research/">research</a>
+      <a href="https://seheon-oh.github.io/research/">grad. students</a>
+      <a href="https://seheon-oh.github.io/research/">talks</a>
+      <a href="https://seheon-oh.github.io/research/">public outreach</a>
+      <a href="https://seheon-oh.github.io/research/">news</a>
+      <a href="https://seheon-oh.github.io/research/">cv</a>
+  </div>
+
+
+<body>
+  
+  
+  <div class="container">
+
+    <h2 id="hi-surveys">HI Galaxy Surveys</h2>
+    <ul>
+      <li>
+        <a href="https://mhongoose.astron.nl/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>MHONGOOSE</strong><br></a>
+        MeerKAT ultra deep HI observations of nearby galaxies
+      </li>
+      
+      <li>
+        <a href="https://wallaby-survey.org/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>WALLABY</strong><br></a>
+        ASKAP HI survey for galaxies in the southern hemisphere
+      </li>
+
+      <li>
+        <a href="https://github.com/FEASTS/LVgal/wiki"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>FEASTS</strong><br></a>
+        FAST HI observations of galaxies in the local Universe
+      </li>
+      
+      <li>
+        <a href="https://www.narrabri.atnf.csiro.au/research/LVHIS/"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>LVHIS</strong><br></a>
+        ATCA HI observations of galaixes in the local volume
+      </li>
+
+      <li>
+        <a href="https://science.nrao.edu/science/surveys/littlethings"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>LITTLE THINGS</strong><br></a>
+        High-resolution VLA observations of dwarf galaxies in the local Universe
+      </li>
+
+      <li>
+        <a href="https://www2.mpia-hd.mpg.de/THINGS/Overview.html"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>THINGS</strong><br></a>
+        High-resolution VLA observations of nearby galaxies
+      </li>
+      
+      
+    </ul>
+
+    
+
+    <h2>Tools for HI kinematic analyses</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/seheon-oh/baygaud-PI"
+          target="_blank"
+          rel="noopener noreferrer">
+          <strong>baygaud-PI</strong><br></a>
+        Development of robust decomposition techniques to separate bulk and non-bulk
+        HI components in nearby galaxies.
+      </li>
+
+      <li>
+          <a href="https://github.com/seheon-oh/2dbat-PI"
+          target="_blank"
+          rel="noopener noreferrer">
+          <strong>2dbat-PI</strong><br></a>
+        2D bayesian automatred tilted-ring fitter
+      </li>
+
+      <li>
+        <a href="https://github.com/PeterKamphuis/pyFAT-astro"
+        target="_blank"
+        rel="noopener noreferrer">
+        <strong>pyFAT</strong><br></a>
+        Python Fully Automated TiRiFiC (pyFAT)
+      </li>
+
+      <li>
+        <strong>gmm-cls</strong><br>
+        Soft clustering anlaysis based on Gaussian mixture modelling (GMM)
+      </li>
+
+      
+    </ul>
+
+    <h2>Research Interests</h2>
+
+    <ul class="projects">
+      <li>
+        <h2 id="hi-kinematics"><strong>HI gas kinematics via multi-Gaussian profile decomposition</strong></h2>
+          The kinematics of neutral hydrogen (HI) gas encode critical information about the baryon cycle in galaxies, including disk rotation, feedback-driven motions, and gas inflow from the surrounding circumgalactic and intergalactic media. However, HI spectra in nearby galaxies are often non-Gaussian and contain multiple kinematic components along a single line of sight, reflecting the superposition of physically distinct gas phases. To disentangle these components, we employ profile decomposition of HI spectra into multiple Gaussian components, enabling a physically motivated separation of bulk rotational gas from dynamically disturbed or externally accreting gas. This approach provides the foundation for systematic kinematic tagging of HI gas in galaxies.
+    
+        <figure class="figure-center">
+          <img src="/research/profile_decomposition1.png" class="responsive-img" alt="cma">
+          <figcaption>An example of multi-Gaussian profile decomposition based on dynesty nested sampling (Oh et al. 2019, 2025)</figcaption>
+        </figure>
+        
+        <p>
+        We use baygaud-PI (BAYesian GAUssian-profile Decomposer; Oh et al. 2019, 2025), a Bayesian framework that fits one to N Gaussian components to each line-of-sight HI spectrum and determines the most probable model via Bayesian evidence comparison. For each spectrum, baygaud-PI performs nested sampling to compute the evidence for competing models and applies physically motivated acceptance criteria, including signal-to-noise thresholds, velocity dispersion limits, and galaxy-specific velocity bounds. This ensures robust identification of kinematic components while avoiding overfitting. The method has been successfully applied to MHONGOOSE observations of NGC 5068, where multi-component decomposition reveals complex outer-disk and extraplanar HI structures that cannot be explained by simple disk rotation alone and are further examined through complementary 3D tilted-ring kinematic modeling.
+        </p>
+        <figure class="figure-center">
+          <img src="/research/baygaud_pi.png" class="responsive-img" alt="cma">
+          <figcaption>Screenshot of baygaud-PI running (Oh et al. 2019, 2025)</figcaption>
+        </figure>
+        
+        <p>
+        To move beyond individual spectra and achieve a global kinematic interpretation, the decomposed Gaussian components are subsequently analyzed using Gaussian Mixture Modelling (GMM). In this step, HI components are clustered in a multi-dimensional parameter space defined by intensity, velocity offset, velocity dispersion, and spatial position. This enables an objective classification of gas into distinct kinematic populations, such as circularly rotating disk gas, feedback-affected gas associated with internal baryon processes, and candidate inflowing cold gas accreting from the IGM/CGM or large-scale structure. The combined baygaud-PI + GMM framework thus provides a powerful, scalable tool for kinematic tagging of HI gas in nearby galaxies and forms the basis for systematic studies across MHONGOOSE and other modern HI surveys.
+        </p>
+        <figure class="figure-center">
+          <img src="/research/ngauss_ngc5068.png" class="responsive-img" alt="cma">
+          <figcaption>Profile decomposition analysis of NGC 5068 from MHONGOOSE (Oh et al. in prep.)</figcaption>
+        </figure>
+        
+      </li>
+
+
+
+      
+      <li>
+        <p>
+        <h2 id="cma"><strong>Cold-mode gas accretion in nearby galaxies</strong></h2>
+        </p>
+        <p>
+        Cold-mode gas accretion (CMA) is a fundamental prediction of ΛCDM galaxy formation models, in which relatively cool (∼10⁴ K) gas flows along cosmic filaments and accretes directly onto galaxies without being shock-heated to the virial temperature. In the local Universe, this process is expected to persist primarily in low-mass halos (M ≲ 10¹² M☉) and is thought to play a crucial role in sustaining star formation over cosmic time. However, observational confirmation remains challenging, as the cold baryonic component of the cosmic web is expected to reside at very low HI column densities (≲10¹⁷–10¹⁸ cm⁻²) and to exhibit kinematics that are distinct from the regularly rotating galactic disk. Detecting such gas therefore requires both high sensitivity and high angular resolution, particularly in the outer regions of nearby galaxies.
+        </p>
+    
+        <figure class="figure-center">
+          <img src="/research/cma.png" class="responsive-img" alt="cma">
+          <figcaption>Gas cycle in galaxies: internal, external, small and large-scales...</figcaption>
+        </figure>
+
+        
+        <p>
+        This project aims to identify and characterize cold-mode gas accretion in the local Universe using high-resolution, high-sensitivity HI observations from MHONGOOSE (MeerKAT Ultra-Deep HI Observations of Nearby Galaxies). MHONGOOSE provides an unprecedented combination of sensitivity (down to ∼5 × 10¹⁷ cm⁻² over 16 km s⁻¹) and spatial resolution (sub-kpc scales), enabling detailed mapping of low-column-density HI gas in galaxy outskirts. Cold-mode accretion is expected to manifest as clumpy, kinematically decoupled HI structures with velocity offsets, non-Gaussian line profiles, and low velocity dispersions (<10 km s⁻¹), distinct from both disk rotation and feedback-driven galactic fountain flows. Recent examples, such as the decoupled outer HI structures observed in NGC 5068, demonstrate the power of such data to isolate accretion signatures that are unlikely to be driven by stellar feedback alone.
+        </p>
+        <figure class="figure-center">
+          <img src="/research/mhongoose-sample.png" class="responsive-img" alt="cma">
+          <figcaption>HI integrated-intensity maps of MHONGOOSE galaxies from MeerKAT observations (de Blok et al. 2024)</figcaption>
+        </figure>
+        
+        
+        <p>
+        A key methodological component of this project is kinematic tagging of HI gas through multi-Gaussian profile decomposition and Gaussian Mixture Model (GMM) clustering. By decomposing HI spectra into multiple kinematic components and statistically grouping gas with similar velocity and dispersion properties, we will systematically separate bulk disk rotation from non-circular, inflowing, and outflowing gas. This framework enables a uniform search for cold-mode accretion signatures across the MHONGOOSE sample and can be extended to complementary surveys (e.g., JVLA-AVID, ASKAP-WALLABY, MeerKAT-FORNAX). The results will provide new constraints on the baryon cycle in nearby galaxies, linking cosmic gas inflow, star formation fueling, and dark matter-dominated galaxy evolution in the local Universe.
+        </p>
+        <figure class="figure-center">
+          <img src="/research/gmm_analysis.png" class="responsive-img" alt="cma">
+          <figcaption>Cold-mode gas accretion clump candidates in the outskirt of NGC 5068 via Gaussian Mixture Modelling (GMM) analysis (Oh et al. in prep.)</figcaption>
+        </figure>
+
+      </li>
+
+
+
+      <li>
+      <p>
+        <h2 id="cusp-core"><strong>Central dark matter distribution in dwarf galaxies: a small-scale challenge to the ΛCDM paradigm at galaxy scales</strong></h2>
+      </p>
+      <p>
+        While ΛCDM simulations predict centrally cuspy dark matter density profiles, high-resolution observations of dwarf galaxies in the local Universe have repeatedly indicated shallow inner density slopes. Using high-quality HI data from the THINGS and LITTLE THINGS surveys, a series of studies (Oh et al. 2008, 2010, 2011, 2015) demonstrated that many dwarf galaxies exhibit dark matter distributions consistent with constant-density cores rather than cusps. These results were derived from detailed mass modeling based on spatially resolved HI rotation curves, establishing dwarf galaxies as key laboratories for testing ΛCDM predictions at small scales.
+      </p>  
+      <figure class="figure-center">
+          <img src="/research/cusp_core.png" class="responsive-img" alt="cma">
+          <figcaption>Rotation curve shape (left) and dark matter density profiles (right) of dwarf galaxies in the local Universe (Oh et al. 2015)</figcaption>
+      </figure>
+
+      <p>
+        On the theoretical side, hydrodynamical simulations by Governato et al. (2010) showed that repeated gas outflows driven by supernova feedback can transform initially cuspy dark matter halos into cores through gravitational coupling between baryons and dark matter. However, subsequent work has highlighted that baryon-induced cores are not a universal outcome of galaxy formation models, and that observational systematics may play a critical role. In particular, Oman et al. (2015, 2019) emphasized that non-circular motions—arising from triaxial dark matter halos and gas disequilibrium—can cause tilted-ring analyses to underestimate inner rotation velocities, thereby mimicking core-like profiles and contributing to the observed diversity of dwarf galaxy rotation curves.
+      </p>
+      <figure class="figure-center">
+          <img src="/research/baryon_induced_cores.png" class="responsive-img" alt="cma">
+          <figcaption>Baryon-induced dark matter cores in galaxies w.r.t. stellar mass</figcaption>
+      </figure>
+
+      <p>
+        This project aims to re-examine the central dark matter distribution of dwarf galaxies using MHONGOOSE by explicitly correcting for non-circular motions and gas disequilibrium. We will derive bulk HI rotation curves by isolating dynamically quiescent gas components and apply a newly devised observational proxy for the ε parameter, which quantifies deviations from radial force balance in the gas disk (Dado & Oman et al. 2025). By using ε as a diagnostic of kinematic equilibrium, this approach enables a more robust extraction of circular velocities and gravitational potentials. The resulting mass models will provide improved constraints on the inner dark matter structure of nearby dwarf galaxies and clarify the relative roles of baryonic feedback and kinematic systematics in shaping the observed cusp–core phenomenology.
+      </p>
+      <figure class="figure-center">
+          <img src="/research/epsilon.png" class="responsive-img" alt="cma">
+          <figcaption>Disequilibrium of gas in disk of galaxies (Dado + Oman et al. 2025)</figcaption>
+      </figure>
+
+      </li>
+  
+    </ul>
+
+
+
+    
+
+    <footer>
+      © 2025 Se-Heon Oh
+    </footer>
+
+  </div>
+</body>
+</html>
